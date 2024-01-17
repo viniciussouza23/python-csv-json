@@ -47,4 +47,4 @@ Este projeto envolve a fusão de dados de arquivos CSV e JSON, a importação do
    
 3. **Como Funciona o programa**
    
-   Assista em: [YOUTUBE](https://www.youtube.com/watch?v=gjEwALnRFV8).
+   Assista em: [YOUTUBE](https://youtu.be/hD7NzO1TaLg).
