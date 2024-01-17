@@ -1,4 +1,4 @@
-# Apresentação no GitHub: Sistema de Integração e Notificação
+# Sistema de Integração e Notificação - PYTHON
 
 ## Visão Geral
 Este projeto envolve a fusão de dados de arquivos CSV e JSON, a importação dos dados mesclados em um banco de dados MySQL usando o XAMPP e a notificação de partes interessadas por e-mail sobre situações críticas de dados. O script em Python fornecido realiza essas tarefas de maneira eficiente.
@@ -37,10 +37,10 @@ Este projeto envolve a fusão de dados de arquivos CSV e JSON, a importação do
    cd python-csv-json
 
 ### Uso
-1. **Instala as Depencias**
+1. **Instalar as Dependências**
    ```bash
    pip install pandas mysql-connector
 
-### Executar o Script:
-```bash
-python main.py   
+2. **Executar o Script:**
+   ```bash
+   python main.py   
