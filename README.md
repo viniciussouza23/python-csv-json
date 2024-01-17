@@ -35,3 +35,12 @@ Este projeto envolve a fusão de dados de arquivos CSV e JSON, a importação do
    ```bash
    git clone https://github.com/viniciussouza23/python-csv-json.git
    cd python-csv-json
+
+### Uso
+1. **Instala as Depencias**
+   ```bash
+   pip install pandas mysql-connector
+
+### Executar o Script:
+```bash
+python main.py   
