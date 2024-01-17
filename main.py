@@ -104,7 +104,7 @@ def import_csv_to_mysql(arquivo, tabela):
             )
 
         # Adicione este trecho após a inserção de dados
-        print("Selecionando dados do MySQL com classification_confidentiality = 'high' em qualquer campo...")
+        print("Selecionando dados do MySQL high em qualquer campo...")
         cursor.execute("SHOW COLUMNS FROM challenger")
         columns = [column[0] for column in cursor.fetchall()]
 
