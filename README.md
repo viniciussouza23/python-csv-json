@@ -43,4 +43,8 @@ Este projeto envolve a fusão de dados de arquivos CSV e JSON, a importação do
 
 2. **Executar o Script:**
    ```bash
-   python main.py   
+   python main.py
+   
+3. **Como Funciona o programa**
+   
+   Assista em: [YOUTUBE](https://www.youtube.com/watch?v=gjEwALnRFV8).
