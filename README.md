@@ -1,4 +1,4 @@
-# Apresentação no GitHub: Sistema de Integração e Notificação
+# Sistema de Integração e Notificação
 
 ## Visão Geral
 Este projeto envolve a fusão de dados de arquivos CSV e JSON, a importação dos dados mesclados em um banco de dados MySQL e a notificação de partes interessadas por e-mail sobre situações críticas de dados. O script em Python fornecido realiza essas tarefas de maneira eficiente.
