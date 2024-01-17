@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 def merge_csv_and_json_to_csv(csv_file, json_file, output_csv):
     print("Carregando dados do CSV...")
     # Carregar dados do CSV para um DataFrame do Pandas
-    csv_data = pd.read_csv(csv_file, header=None, names=['id', 'username', 'status', 'email'])
+    csv_data = pd.read_csv(csv_file, header=None, names=['id', 'user_id', 'user_state', 'user_manager'])
 
     print("Carregando dados do JSON...")
     # Carregar dados do JSON
@@ -40,13 +40,13 @@ def merge_csv_and_json_to_csv(csv_file, json_file, output_csv):
     # Criar um DataFrame do Pandas para os dados do JSON
     json_df = pd.DataFrame(json_records)
 
-    # Mesclar DataFrames do CSV e JSON em uma coluna comum, por exemplo, 'username'
+    # Mesclar DataFrames do CSV e JSON em uma coluna comum, por exemplo, 'userid'
     print("Mesclando DataFrames do CSV e JSON...")
-    merged_df = pd.merge(csv_data, json_df, left_on='username', right_on='db_list/owner/uid', how='left')
+    merged_df = pd.merge(csv_data, json_df, left_on='user_id', right_on='db_list/owner/uid', how='left')
 
     # Reorganizar colunas conforme o formato desejado
     output_columns = [
-        'id', 'username', 'status', 'email',
+        'id', 'user_id', 'user_state', 'user_manager',
         'db_list/dn_name', 'db_list/classification/confidentiality',
         'db_list/classification/integrity', 'db_list/classification/availability',
         'db_list/owner/name', 'db_list/owner/uid', 'db_list/owner/email',
